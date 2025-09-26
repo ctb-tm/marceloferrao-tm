@@ -113,11 +113,24 @@
         }
 
         /* --- Estilos Específicos das Páginas --- */
-        #page1 video {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
+        
+        /* Estilos para o vídeo do YouTube (Página 1) */
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* Proporção 16:9 */
             border-radius: 10px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
         }
         
         .photo-gallery {
@@ -152,7 +165,7 @@
         }
         .logo-viva {
             display: block;
-            width: 240px; /* Aumentado para 240px */
+            width: 240px;
             margin: 0 auto;
         }
 
@@ -242,10 +255,9 @@
     <div id="page1" class="page active">
         <div class="box">
             <h1>VÍDEO</h1>
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/O-_D0QT9aJQ?autoplay=1&mute=1&controls=0&rel=0&loop=1&playlist=O-_D0QT9aJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 
@@ -254,7 +266,7 @@
             <h2>HISTÓRICO DO ATLETA</h2>
             <p>Marcelo Ferrão Macêdo de Carvalho Silva, nascido em 09/11/2011 em Salvador-BA, é um jovem talento do tênis de mesa que já construiu uma história marcante no cenário esportivo baiano. Desde muito cedo, demonstrou paixão pelo esporte e disciplina exemplar nos treinos, treinando diariamente com dedicação total ao seu desenvolvimento técnico, físico e mental.</p>
             <p>Sua carreira já é reconhecida por um diferencial importante: Marcelo não se destaca apenas pelo talento, mas pela resiliência e pela maturidade com que encara vitórias e derrotas. Com apenas 13 anos, já atua como referência para os colegas de treino e para atletas mais novos, demonstrando espírito de liderança, respeito aos adversários e exemplo de fair play.</p>
-            <p>Filiado à Federação de Tênis de Mesa da Bahia (FTMBA), Marcelo vem acumulando resultados expressivos em torneios municipais, estaudais e escolares, sempre elevando o nível de seu jogo a cada temporada. Em 2025, conquistou de forma antecipada o título de Campeão Baiano SUB-15, um feito que confirma sua evolução e o coloca entre as maiores promessas do tênis de mesa da Bahia.</p>
+            <p>Filiado à Federação de Tênis de Mesa da Bahia (FTMBA), Marcelo vem acumulando resultados expressivos em torneios municipais, estaduais e escolares, sempre elevando o nível de seu jogo a cada temporada. Em 2025, conquistou de forma antecipada o título de Campeão Baiano SUB-15, um feito que confirma sua evolução e o coloca entre as maiores promessas do tênis de mesa da Bahia.</p>
             <p>Além das conquistas esportivas, Marcelo participa ativamente de projetos sociais em seu clube, mostrando que compreende o esporte não apenas como competição, mas como ferramenta de transformação pessoal e coletiva. Seu compromisso com a superação, com os estudos e com o esporte o transformam em um verdadeiro exemplo para a nova geração de atletas.</p>
         </div>
         <div class="box">
@@ -310,7 +322,8 @@
                 <img src="marcelo5.jpg" alt="Foto de Marcelo 5">
                 <img src="marcelo6.jpg" alt="Foto de Marcelo 6">
                 <img src="marcelo7.jpg" alt="Foto de Marcelo 7">
-                <img src="marcelo8.jpg" alt="Foto de Marcelo 8"> </div>
+                <img src="marcelo8.jpg" alt="Foto de Marcelo 8">
+            </div>
         </div>
     </div>
     
