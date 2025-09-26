@@ -120,18 +120,17 @@
             border-radius: 10px;
         }
         
-        /* --- ESTILOS ATUALIZADOS DA GALERIA --- */
         .photo-gallery {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* Define 4 colunas iguais */
+            grid-template-columns: repeat(4, 1fr);
             gap: 15px;
         }
 
         .photo-gallery img {
             width: 100%;
-            height: 150px; /* Define uma altura fixa para todas as fotos */
-            object-fit: cover; /* Preenche o espaço sem distorcer */
-            object-position: center top; /* Alinha a foto para preservar o topo */
+            height: 150px;
+            object-fit: cover;
+            object-position: center top;
             border-radius: 8px;
             border: 2px solid #00aaaa;
             cursor: pointer;
@@ -141,11 +140,20 @@
         .photo-gallery img:hover {
             opacity: 0.7;
         }
-
+        
+        /* Estilos da logo na Página 5 */
+        .logo-container-white {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: fit-content;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
         .logo-viva {
             display: block;
-            margin: 20px auto;
-            width: 180px;
+            width: 200px; /* Aumentado para 200px */
+            margin: 0 auto;
         }
 
         /* --- Navegação --- */
@@ -182,7 +190,7 @@
             text-align: center;
         }
 
-        /* --- ESTILOS: Modal/Lightbox para Galeria --- */
+        /* --- ESTILOS Modal/Lightbox para Galeria --- */
         .modal {
             display: none;
             position: fixed;
@@ -199,10 +207,10 @@
         .modal-content {
             margin: auto;
             display: block;
-            width: auto;
-            height: auto;
-            max-width: 90%;
-            max-height: 85%;
+            width: 85%;
+            max-width: 110vh;
+            aspect-ratio: 16 / 9; /* Formato 16:9 */
+            object-fit: cover; /* Preenche a área 16:9 */
         }
 
         .close {
@@ -291,8 +299,23 @@
         </div>
     </div>
 
-
     <div id="page3" class="page">
+        <div class="box">
+            <h1>ÁLBUM DE FOTOS</h1>
+            <div class="photo-gallery">
+                <img src="marcelo1.jpg" alt="Foto de Marcelo 1">
+                <img src="marcelo2.jpg" alt="Foto de Marcelo 2">
+                <img src="marcelo3.jpg" alt="Foto de Marcelo 3">
+                <img src="marcelo4.jpg" alt="Foto de Marcelo 4">
+                <img src="marcelo5.jpg" alt="Foto de Marcelo 5">
+                <img src="marcelo6.jpg" alt="Foto de Marcelo 6">
+                <img src="marcelo7.jpg" alt="Foto de Marcelo 7">
+                <img src="marcelo8.png" alt="Foto de Marcelo 8">
+            </div>
+        </div>
+    </div>
+    
+    <div id="page4" class="page">
         <h1>PROJETO</h1>
         <div class="box">
             <h2>Fortalecimento e Excelência Esportiva</h2>
@@ -321,22 +344,6 @@
                 <li><strong>Inscrições, Uniforme e Calçados:</strong> R$ 1.800,00</li>
             </ul>
             <p style="text-align:right; font-weight: bold;"><strong>TOTAL:</strong> R$ 40.000,00</p>
-        </div>
-    </div>
-
-    <div id="page4" class="page">
-        <div class="box">
-            <h1>ÁLBUM DE FOTOS</h1>
-            <div class="photo-gallery">
-                <img src="marcelo1.jpg" alt="Foto de Marcelo 1">
-                <img src="marcelo2.jpg" alt="Foto de Marcelo 2">
-                <img src="marcelo3.jpg" alt="Foto de Marcelo 3">
-                <img src="marcelo4.jpg" alt="Foto de Marcelo 4">
-                <img src="marcelo5.jpg" alt="Foto de Marcelo 5">
-                <img src="marcelo6.jpg" alt="Foto de Marcelo 6">
-                <img src="marcelo7.jpg" alt="Foto de Marcelo 7">
-                <img src="marcelo8.png" alt="Foto de Marcelo 8">
-            </div>
         </div>
     </div>
 
@@ -375,14 +382,16 @@
             </table>
             <p style="font-size: 0.9em; font-style: italic; text-align: center; margin-top: 15px;">O incentivo não se aplica a empresas do Simples Nacional e depende de aprovação do projeto esportivo.</p>
         </div>
-        <img src="viva.png" alt="Logo Viva Esporte" class="logo-viva">
+        <div class="logo-container-white">
+            <img src="viva.png" alt="Logo Viva Esporte" class="logo-viva">
+        </div>
     </div>
 
     <nav>
         <button onclick="showPage(1)" class="nav-btn active-nav">Vídeo</button>
         <button onclick="showPage(2)" class="nav-btn">Atleta</button>
-        <button onclick="showPage(3)" class="nav-btn">Projeto</button>
-        <button onclick="showPage(4)" class="nav-btn">Fotos</button>
+        <button onclick="showPage(3)" class="nav-btn">Fotos</button>
+        <button onclick="showPage(4)" class="nav-btn">Projeto</button>
         <button onclick="showPage(5)" class="nav-btn">Lei</button>
     </nav>
     
