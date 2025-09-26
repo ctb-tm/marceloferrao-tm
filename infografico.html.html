@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico - Marcelo Ferrão</title>
+    <style>
+        /* --- Estilos Gerais --- */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: cyan;
+            color: #333;
+        }
+
+        /* --- Estrutura do Cabeçalho --- */
+        header {
+            background-color: red;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            width: 130px;
+            height: auto;
+        }
+        
+        /* --- Estrutura das Páginas --- */
+        .page {
+            display: none; /* Todas as páginas começam escondidas */
+            padding: 20px;
+        }
+
+        .page.active {
+            display: block; /* A página ativa é exibida */
+        }
+
+        /* --- Caixa de Conteúdo --- */
+        .box {
+            background-color: rgba(0, 255, 255, 0.2); /* Fundo azul cyan com 20% de opacidade */
+            border: 1px solid #00aaaa;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 900px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #005f5f;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* --- Estilos Específicos das Páginas --- */
+
+        /* Página 1: Vídeo */
+        #page1 video {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Página 4: Álbum de Fotos */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            justify-items: center;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #00aaaa;
+        }
+
+        /* Página 5: Lei */
+        #page5 iframe {
+            width: 100%;
+            height: 500px; /* Altura ajustável conforme necessidade */
+            border: none;
+            border-radius: 10px;
+        }
+        #page5 .viva-logo {
+            display: block;
+            margin: 20px auto;
+            width: 200px; /* Tamanho ajustável */
+        }
+
+        /* --- Navegação --- */
+        nav {
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        nav button:hover {
+            background-color: #c00;
+        }
+        
+        nav button.active-nav {
+            background-color: #a00;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="marcelologo.png" alt="Logo Marcelo Ferrão">
+    </header>
+
+    <div id="page1" class="page active">
+        <div class="box">
+            <h1>VÍDEO</h1>
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </div>
+
+    <div id="page2" class="page">
+        <h1>ATLETA</h1>
+        <div class="box">
+            <h2>Histórico</h2>
+            [cite_start]<p>Marcelo, nascido em 09/11/2011 em Salvador, BA, é uma promessa do tênis de mesa baiano. [cite: 8] [cite_start]Conhecido por sua dedicação, resiliência e espírito esportivo, treina diariamente buscando aprimorar não só a técnica, mas também valores como disciplina e respeito. [cite: 9, 10] [cite_start]Filiado à Federação de Tênis de Mesa da Bahia (FTMBA), é um atleta focado, que valoriza o aprendizado constante e atua como referência para jovens iniciantes em projetos sociais. [cite: 11, 13, 14]</p>
+        </div>
+        <div class="box">
+            <h2>Títulos e Conquistas</h2>
+            <ul>
+                [cite_start]<li>Campeão Baiano Antecipado SUB-15 (2025). [cite: 12, 45]</li>
+                [cite_start]<li>1º lugar nos Jogos Internos Montessoriano. [cite: 46]</li>
+                [cite_start]<li>Campeão do Campeonato Serrinhense/AABB. [cite: 47]</li>
+                [cite_start]<li>Diversos pódios no Circuito Baiano de Tênis de Mesa. [cite: 48]</li>
+                [cite_start]<li>Múltiplos títulos em etapas municipais e estaduais e medalhas em festivais escolares. [cite: 12, 49]</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="page3" class="page">
+        <h1>PROJETO</h1>
+        <div class="box">
+            <h2>Fortalecimento e Excelência Esportiva</h2>
+            [cite_start]<p><strong>Objetivo Geral:</strong> Consolidar Marcelo como um exemplo de excelência no tênis de mesa, potencializando seu desenvolvimento técnico, físico, mental e social. [cite: 19]</p>
+             [cite_start]<p><strong>Valor Solicitado:</strong> R$ 40.000,00 para o período de 12 meses (Jan-Dez/2026). [cite: 5, 6]</p>
+        </div>
+        <div class="box">
+            <h2>Objetivos Específicos</h2>
+            <ul>
+                [cite_start]<li>Participar de pelo menos 12 competições oficiais em 2026. [cite: 21, 55]</li>
+                [cite_start]<li>Alcançar o top 3 do ranking estadual SUB-15. [cite: 21, 56]</li>
+                [cite_start]<li>Realizar até 6 sessões semanais de treino focado na evolução técnica e estratégica. [cite: 21, 57]</li>
+                [cite_start]<li>Garantir suporte multidisciplinar com acompanhamento médico, nutricional e psicológico. [cite: 15, 58]</li>
+                [cite_start]<li>Monitorar e analisar o desempenho com ferramentas digitais. [cite: 22]</li>
+            </ul>
+        </div>
+         <div class="box">
+            <h2>Orçamento Previsto</h2>
+            <ul>
+                <li><strong>Bolsa Atleta:</strong> R$ 14.400,00</li>
+                <li><strong>Academia Especializada:</strong> R$ 7.200,00</li>
+                <li><strong>Materiais/Equipamentos:</strong> R$ 5.000,00</li>
+                <li><strong>Treinamento/Técnico:</strong> R$ 4.800,00</li>
+                <li><strong>Viagens e Hospedagem:</strong> R$ 4.800,00</li>
+                <li><strong>Gestão Esportiva:</strong> R$ 2.000,00</li>
+                <li><strong>Inscrições, Uniforme e Calçados:</strong> R$ 1.800,00</li>
+            </ul>
+            [cite_start]<p style="text-align:right; font-weight: bold;"><strong>TOTAL:</strong> R$ 40.000,00 [cite: 27]</p>
+        </div>
+    </div>
+
+    <div id="page4" class="page">
+        <div class="box">
+            <h1>ÁLBUM DE FOTOS</h1>
+            <div class="photo-gallery">
+                <img src="marcelo1.jpg" alt="Foto de Marcelo 1">
+                <img src="marcelo2.jpg" alt="Foto de Marcelo 2">
+                <img src="marcelo3.jpg" alt="Foto de Marcelo 3">
+                <img src="marcelo4.jpg" alt="Foto de Marcelo 4">
+                <img src="marcelo5.jpg" alt="Foto de Marcelo 5">
+                <img src="marcelo6.jpg" alt="Foto de Marcelo 6">
+                <img src="marcelo7.jpg" alt="Foto de Marcelo 7">
+                <img src="marcelo8.png" alt="Foto de Marcelo 8">
+            </div>
+        </div>
+    </div>
+
+    <div id="page5" class="page">
+         <div class="box">
+            <h1>LEI DE INCENTIVO AO ESPORTE</h1>
+            <iframe src="lei.html"></iframe>
+            <img src="viva.png" alt="Logo Viva" class="viva-logo">
+        </div>
+    </div>
+
+    <nav>
+        <button onclick="showPage(1)" class="nav-btn active-nav">Vídeo</button>
+        <button onclick="showPage(2)" class="nav-btn">Atleta</button>
+        <button onclick="showPage(3)" class="nav-btn">Projeto</button>
+        <button onclick="showPage(4)" class="nav-btn">Fotos</button>
+        <button onclick="showPage(5)" class="nav-btn">Lei</button>
+    </nav>
+    
+    <script>
+        // Função para mostrar a página correta e esconder as outras
+        function showPage(pageNumber) {
+            // Esconde todas as páginas
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Mostra a página selecionada
+            const pageToShow = document.getElementById('page' + pageNumber);
+            if (pageToShow) {
+                pageToShow.classList.add('active');
+            }
+            
+            // Atualiza o botão ativo na navegação
+            const navButtons = document.querySelectorAll('.nav-btn');
+            navButtons.forEach(button => {
+                button.classList.remove('active-nav');
+            });
+            navButtons[pageNumber - 1].classList.add('active-nav');
+        }
+    </script>
+
+</body>
+</html>
