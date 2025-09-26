@@ -119,25 +119,27 @@
             max-width: 100%;
             border-radius: 10px;
         }
-
+        
+        /* --- ESTILOS ATUALIZADOS DA GALERIA --- */
         .photo-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(4, 1fr); /* Define 4 colunas iguais */
             gap: 15px;
-            justify-items: center;
         }
 
         .photo-gallery img {
             width: 100%;
-            height: auto;
+            height: 150px; /* Define uma altura fixa para todas as fotos */
+            object-fit: cover; /* Preenche o espaço sem distorcer */
+            object-position: center top; /* Alinha a foto para preservar o topo */
             border-radius: 8px;
             border: 2px solid #00aaaa;
-            cursor: pointer; /* Adiciona o cursor de clique */
+            cursor: pointer;
             transition: 0.3s;
         }
-
+        
         .photo-gallery img:hover {
-            opacity: 0.7; /* Efeito ao passar o mouse */
+            opacity: 0.7;
         }
 
         .logo-viva {
@@ -180,10 +182,10 @@
             text-align: center;
         }
 
-        /* --- NOVOS ESTILOS: Modal/Lightbox para Galeria --- */
+        /* --- ESTILOS: Modal/Lightbox para Galeria --- */
         .modal {
-            display: none; /* Escondido por padrão */
-            position: fixed; /* Fica sobre todo o conteúdo */
+            display: none;
+            position: fixed;
             z-index: 1001;
             padding-top: 60px;
             left: 0;
@@ -191,7 +193,7 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0,0,0,0.9); /* Fundo preto semitransparente */
+            background-color: rgba(0,0,0,0.9);
         }
 
         .modal-content {
@@ -413,7 +415,7 @@
             navButtons[pageNumber - 1].classList.add('active-nav');
         }
 
-        // --- NOVO SCRIPT: Modal/Lightbox da Galeria ---
+        // --- Script do Modal/Lightbox da Galeria ---
         var modal = document.getElementById("myModal");
         var modalImg = document.getElementById("img01");
         var galleryImages = document.querySelectorAll(".photo-gallery img");
@@ -431,7 +433,6 @@
           modal.style.display = "none";
         }
 
-        // Fecha o modal se o usuário clicar fora da imagem
         modal.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
