@@ -57,6 +57,10 @@
             text-align: center;
             color: #005f5f;
         }
+        
+        p {
+            line-height: 1.6;
+        }
 
         /* Estilo para a lista de títulos na página 2 */
         #page2 h3 {
@@ -88,6 +92,25 @@
             padding: 10px;
             border-radius: 5px;
         }
+        
+        /* --- Estilos da Tabela (Página 5) --- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #00aaaa;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: rgba(0, 95, 95, 0.7); /* Darker cyan */
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.3); /* Lighter background for even rows */
+        }
 
         /* --- Estilos Específicos das Páginas --- */
         #page1 video {
@@ -111,16 +134,10 @@
             border: 2px solid #00aaaa;
         }
 
-        #page5 iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            border-radius: 10px;
-        }
-        #page5 .viva-logo {
+        .logo-viva {
             display: block;
             margin: 20px auto;
-            width: 200px;
+            width: 150px;
         }
 
         /* --- Navegação --- */
@@ -276,11 +293,41 @@
     </div>
 
     <div id="page5" class="page">
-         <div class="box">
-            <h1>LEI DE INCENTIVO AO ESPORTE</h1>
-            <iframe src="lei.html"></iframe>
-            <img src="viva.png" alt="Logo Viva" class="viva-logo">
+        <h1>LEI DE INCENTIVO AO ESPORTE</h1>
+        <div class="box">
+            <h2>Programa Viva Esporte</h2>
+            <p>A Prefeitura de Salvador, através da SEFAZ e da SEMPRE, regulamentou o <strong>Programa de Incentivo ao Esporte - VIVA ESPORTE</strong>. O programa permite que empresas contribuintes do ISS (Imposto Sobre Serviços) destinem parte do imposto devido para financiar projetos esportivos na cidade.</p>
+            <p>O objetivo é fomentar o desenvolvimento esportivo, promover a inclusão social e apoiar atletas e eventos locais por meio da renúncia fiscal. Dessa forma, a iniciativa privada se torna parceira direta na construção de um futuro melhor para o esporte em Salvador.</p>
         </div>
+        <div class="box">
+            <h2>Simulação de Incentivo Fiscal - ISS</h2>
+            <p>Empresas que pagam ISS em Salvador podem destinar até <strong>20% do valor anual do imposto devido</strong> para apoiar projetos esportivos aprovados pelo Viva Esporte. O incentivo é abatido diretamente do ISS após o investimento.</p>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Valor ISS pago ano (R$)</th>
+                    <th>20% Viva Esporte (R$)</th>
+                    <th>Aporte mensal máx. (R$)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>100.000</td><td>20.000</td><td>1.666,67</td></tr>
+                  <tr><td>200.000</td><td>40.000</td><td>3.333,33</td></tr>
+                  <tr><td>300.000</td><td>60.000</td><td>5.000,00</td></tr>
+                  <tr><td>400.000</td><td>80.000</td><td>6.666,67</td></tr>
+                  <tr><td>500.000</td><td>100.000</td><td>8.333,33</td></tr>
+                  <tr><td>600.000</td><td>120.000</td><td>10.000,00</td></tr>
+                  <tr><td>700.000</td><td>140.000</td><td>11.666,67</td></tr>
+                  <tr><td>800.000</td><td>160.000</td><td>13.333,33</td></tr>
+                  <tr><td>900.000</td><td>180.000</td><td>15.000,00</td></tr>
+                  <tr><td>1.000.000</td><td>200.000</td><td>16.666,67</td></tr>
+                  <tr><td>1.100.000</td><td>220.000</td><td>18.333,33</td></tr>
+                  <tr><td>1.200.000</td><td>240.000</td><td>20.000,00</td></tr>
+                </tbody>
+            </table>
+            <p style="font-size: 0.9em; font-style: italic; text-align: center; margin-top: 15px;">O incentivo não se aplica a empresas do Simples Nacional e depende de aprovação do projeto esportivo.</p>
+        </div>
+        <img src="viva.png" alt="Logo Viva Esporte" class="logo-viva">
     </div>
 
     <nav>
