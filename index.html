@@ -15,16 +15,22 @@
 
         /* --- Estrutura do Cabeçalho --- */
         header {
-            background-color: white; /* Alterado de red para white */
+            background-color: white; 
             padding: 15px;
             text-align: center;
             position: relative;
-            border-bottom: 2px solid #f0f0f0; /* Borda sutil para separação */
+            border-bottom: 2px solid #f0f0f0;
         }
 
         header img {
-            width: 130px;
+            width: 140px; /* Aumentado para 140px */
             height: auto;
+        }
+
+        header h2 {
+            margin: 5px 0 0 0;
+            color: #333;
+            font-size: 1.8em;
         }
         
         /* --- Estrutura das Páginas --- */
@@ -52,6 +58,25 @@
             color: #005f5f;
         }
 
+        /* Estilo para a lista de títulos na página 2 */
+        #page2 h3 {
+            color: #005f5f;
+            border-bottom: 1px solid #00aaaa;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        #page2 ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        
+        #page2 ul li {
+            background-color: transparent;
+            margin-bottom: 8px;
+            padding: 0;
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
@@ -65,8 +90,6 @@
         }
 
         /* --- Estilos Específicos das Páginas --- */
-
-        /* Página 1: Vídeo */
         #page1 video {
             display: block;
             margin: 0 auto;
@@ -74,7 +97,6 @@
             border-radius: 10px;
         }
 
-        /* Página 4: Álbum de Fotos */
         .photo-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -89,17 +111,16 @@
             border: 2px solid #00aaaa;
         }
 
-        /* Página 5: Lei */
         #page5 iframe {
             width: 100%;
-            height: 500px; /* Altura ajustável conforme necessidade */
+            height: 500px;
             border: none;
             border-radius: 10px;
         }
         #page5 .viva-logo {
             display: block;
             margin: 20px auto;
-            width: 200px; /* Tamanho ajustável */
+            width: 200px;
         }
 
         /* --- Navegação --- */
@@ -142,6 +163,7 @@
 
     <header>
         <img src="marcelologo.png" alt="Logo Marcelo Ferrão">
+        <h2>MARCELO FERRÃO</h2>
     </header>
 
     <div id="page1" class="page active">
@@ -151,56 +173,89 @@
                 <source src="video1.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
-        }
+        </div>
     </div>
 
     <div id="page2" class="page">
-        <h1>ATLETA</h1>
         <div class="box">
-            <h2>Histórico</h2>
-            [cite_start]<p>Marcelo, nascido em 09/11/2011 em Salvador, BA, é uma promessa do tênis de mesa baiano[cite: 8]. [cite_start]Conhecido por sua dedicação, resiliência e espírito esportivo, treina diariamente buscando aprimorar não só a técnica, mas também valores como disciplina e respeito[cite: 9, 10]. [cite_start]Filiado à Federação de Tênis de Mesa da Bahia (FTMBA), é um atleta focado, que valoriza o aprendizado constante e atua como referência para jovens iniciantes em projetos sociais[cite: 11, 13, 14].</p>
+            <h2>HISTÓRICO DO ATLETA</h2>
+            <p>Marcelo Ferrão Macêdo de Carvalho Silva, nascido em 09/11/2011 em Salvador-BA, é um jovem talento do tênis de mesa que já construiu uma história marcante no cenário esportivo baiano. Desde muito cedo, demonstrou paixão pelo esporte e disciplina exemplar nos treinos, treinando diariamente com dedicação total ao seu desenvolvimento técnico, físico e mental.</p>
+            <p>Sua carreira já é reconhecida por um diferencial importante: Marcelo não se destaca apenas pelo talento, mas pela resiliência e pela maturidade com que encara vitórias e derrotas. Com apenas 13 anos, já atua como referência para os colegas de treino e para atletas mais novos, demonstrando espírito de liderança, respeito aos adversários e exemplo de fair play.</p>
+            <p>Filiado à Federação de Tênis de Mesa da Bahia (FTMBA), Marcelo vem acumulando resultados expressivos em torneios municipais, estaduais e escolares, sempre elevando o nível de seu jogo a cada temporada. Em 2025, conquistou de forma antecipada o título de Campeão Baiano SUB-15, um feito que confirma sua evolução e o coloca entre as maiores promessas do tênis de mesa da Bahia.</p>
+            <p>Além das conquistas esportivas, Marcelo participa ativamente de projetos sociais em seu clube, mostrando que compreende o esporte não apenas como competição, mas como ferramenta de transformação pessoal e coletiva. Seu compromisso com a superação, com os estudos e com o esporte o transformam em um verdadeiro exemplo para a nova geração de atletas.</p>
         </div>
         <div class="box">
-            <h2>Títulos e Conquistas</h2>
+            <h2>TÍTULOS E RESULTADOS</h2>
+            <h3>2025</h3>
             <ul>
-                [cite_start]<li>Campeão Baiano Antecipado SUB-15 (2025)[cite: 12, 45].</li>
-                [cite_start]<li>1º lugar nos Jogos Internos Montessoriano[cite: 46].</li>
-                [cite_start]<li>Campeão do Campeonato Serrinhense/AABB[cite: 47].</li>
-                [cite_start]<li>Diversos pódios no Circuito Baiano de Tênis de Mesa[cite: 48].</li>
-                [cite_start]<li>Múltiplos títulos em etapas municipais e estaduais e medalhas em festivais escolares[cite: 12, 49].</li>
+                <li>🏆 Campeão Baiano Antecipado – Circuito Baiano de Tênis de Mesa SUB-15</li>
+                <li>🥈 2º lugar – 4ª Etapa – Circuito Baiano SUB-15</li>
+                <li>🥉 3º lugar – 3ª Etapa – Circuito Baiano SUB-15</li>
+                <li>🥇 1º lugar – Jogos Internos Montessoriano</li>
+                <li>🥇 1º lugar – Campeonato Serrinhense de Tênis de Mesa – AABB</li>
+                <li>🥇 1º lugar – 2ª Etapa – Circuito Baiano SUB-15</li>
+                <li>🥇 1º lugar – 2ª Etapa – Circuito Baiano – Rating F</li>
+                <li>🥈 2º lugar – 1ª Etapa – Circuito Baiano SUB-15</li>
+                <li>🥉 3º lugar – 1ª Etapa – Circuito Baiano – Rating F</li>
+                <li>🥈 2º lugar – 1ª Etapa FEEPS – Festival Esportivo das Escolas Particulares de Salvador</li>
+            </ul>
+            <h3>2024</h3>
+            <ul>
+                <li>🥉 3º lugar – Aberto C – Torneio Interno CTB</li>
+                <li>🥇 1º lugar – 6ª Etapa – Divisão Única – ETMPAN</li>
+                <li>🥇 1º lugar – 5ª Etapa – 3ª Divisão – Campeonato ETMPAN (AABB – Salvador)</li>
+                <li>🥇 1º lugar – 5ª Etapa – Divisão Única – ETMPAN</li>
+                <li>🥇 1º lugar – Jogos Internos Montessoriano</li>
+                <li>🥈 2º lugar – 2ª Etapa FEEPS – Festival Esportivo das Escolas Particulares de Salvador</li>
+                <li>🥇 1º lugar – Torneio Estudar – CTB</li>
+                <li>🥉 3º lugar – Torneio Aberto C – CTB</li>
+                <li>🥈 2º lugar – 3ª Etapa Aberto ATMC – 4ª Divisão</li>
+                <li>🥉 3º lugar – 3ª Etapa – Torneio de Confraternização – CTB</li>
+            </ul>
+            <h3>2023</h3>
+            <ul>
+                <li>🥉 3º lugar – 2ª Etapa FEEPS – Festival Esportivo das Escolas Particulares de Salvador</li>
             </ul>
         </div>
+        <div class="box">
+            <h2>MARCELO EM PERSPECTIVA</h2>
+            <p>Marcelo já soma mais de 20 títulos e pódios oficiais entre 2023 e 2025, um currículo impressionante para um atleta de apenas 13 anos. O mais marcante é a consistência: em praticamente todas as competições que participa, ele alcança o pódio, confirmando não apenas talento, mas também foco e preparo mental.</p>
+            <p>O futuro aponta para horizontes ainda maiores. Em 2026, Marcelo terá pela frente o desafio de ampliar sua presença em torneios nacionais, medindo forças com os principais atletas da categoria. Seu projeto de fortalecimento esportivo inclui acompanhamento multidisciplinar — técnico, nutricional, psicológico e físico — garantindo que sua evolução seja sustentável e completa.</p>
+            <p>Mais do que títulos, Marcelo representa uma nova geração do tênis de mesa baiano: jovem, competitivo, ético e consciente do papel social do esporte. Seu caminho inspira não apenas colegas de treino, mas também crianças e adolescentes que veem no esporte uma oportunidade de crescimento.</p>
+            <p>Ele é prova viva de que talento, aliado a disciplina e valores humanos, pode transformar sonhos em conquistas reais.</p>
+        </div>
     </div>
+
 
     <div id="page3" class="page">
         <h1>PROJETO</h1>
         <div class="box">
             <h2>Fortalecimento e Excelência Esportiva</h2>
-            [cite_start]<p><strong>Objetivo Geral:</strong> Consolidar Marcelo como um exemplo de excelência no tênis de mesa, potencializando seu desenvolvimento técnico, físico, mental e social[cite: 19].</p>
-             [cite_start]<p><strong>Valor Solicitado:</strong> R$ 40.000,00 para o período de 12 meses (Jan-Dez/2026)[cite: 5, 6].</p>
+            <p><strong>Objetivo Geral:</strong> Consolidar Marcelo como um exemplo de excelência no tênis de mesa, potencializando seu desenvolvimento técnico, físico, mental e social.</p>
+             <p><strong>Valor Solicitado:</strong> R$ 40.000,00 para o período de 12 meses (Jan-Dez/2026).</p>
         </div>
         <div class="box">
             <h2>Objetivos Específicos</h2>
             <ul>
-                [cite_start]<li>Participar de pelo menos 12 competições oficiais em 2026[cite: 21, 55].</li>
-                [cite_start]<li>Alcançar o top 3 do ranking estadual SUB-15[cite: 21, 56].</li>
-                [cite_start]<li>Realizar até 6 sessões semanais de treino focado na evolução técnica e estratégica[cite: 21, 57].</li>
-                [cite_start]<li>Garantir suporte multidisciplinar com acompanhamento médico, nutricional e psicológico[cite: 15, 23, 58].</li>
-                [cite_start]<li>Monitorar e analisar o desempenho com ferramentas digitais[cite: 22].</li>
+                <li>Participar de pelo menos 12 competições oficiais em 2026.</li>
+                <li>Alcançar o top 3 do ranking estadual SUB-15.</li>
+                <li>Realizar até 6 sessões semanais de treino focado na evolução técnica e estratégica.</li>
+                <li>Garantir suporte multidisciplinar com acompanhamento médico, nutricional e psicológico.</li>
+                <li>Monitorar e analisar o desempenho com ferramentas digitais.</li>
             </ul>
         </div>
          <div class="box">
             <h2>Orçamento Previsto</h2>
             <ul>
-                [cite_start]<li><strong>Bolsa Atleta:</strong> R$ 14.400,00 [cite: 27]</li>
-                [cite_start]<li><strong>Academia Especializada:</strong> R$ 7.200,00 [cite: 27]</li>
-                [cite_start]<li><strong>Materiais/Equipamentos:</strong> R$ 5.000,00 [cite: 27]</li>
-                [cite_start]<li><strong>Treinamento/Técnico:</strong> R$ 4.800,00 [cite: 27]</li>
-                [cite_start]<li><strong>Viagens e Hospedagem:</strong> R$ 4.800,00 [cite: 27]</li>
-                [cite_start]<li><strong>Gestão Esportiva:</strong> R$ 2.000,00 [cite: 27]</li>
-                [cite_start]<li><strong>Inscrições, Uniforme e Calçados:</strong> R$ 1.800,00 [cite: 27]</li>
+                <li><strong>Bolsa Atleta:</strong> R$ 14.400,00</li>
+                <li><strong>Academia Especializada:</strong> R$ 7.200,00</li>
+                <li><strong>Materiais/Equipamentos:</strong> R$ 5.000,00</li>
+                <li><strong>Treinamento/Técnico:</strong> R$ 4.800,00</li>
+                <li><strong>Viagens e Hospedagem:</strong> R$ 4.800,00</li>
+                <li><strong>Gestão Esportiva:</strong> R$ 2.000,00</li>
+                <li><strong>Inscrições, Uniforme e Calçados:</strong> R$ 1.800,00</li>
             </ul>
-            [cite_start]<p style="text-align:right; font-weight: bold;"><strong>TOTAL:</strong> R$ 40.000,00 [cite: 27]</p>
+            <p style="text-align:right; font-weight: bold;"><strong>TOTAL:</strong> R$ 40.000,00</p>
         </div>
     </div>
 
